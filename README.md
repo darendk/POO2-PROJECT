@@ -1,1 +1,7 @@
 # POO2-PROJECT
+This is a PACMAN game written in JAVA.
+
+Project Collaborators:
+-# BALOOMOODY DAREN
+-# BEEHARRY VIBAHAKARSINGH
+-# YOGHESWAR SURJOO
