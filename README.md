@@ -6,86 +6,70 @@ Project Collaborators:
 -# BEEHARRY VIBAHAKARSINGH
 -# YOGHESWAR SURJOO
 
-Pacman-game in javaFx in collaboration with BALOOMOODY DAREN and YOGHESWAR SURJOO.
-A readme is been made so as users can easily know how to execute the game.
-Prerequisites.
-This section indicates what are the requirements that should be poccessed in order to be able to start.
+Pacman Game in JavaFX
 
-    esclipse workspace
-    JavaFX SDK, Which should be downloaded from the website GluonHQ or from the link below directly.
+This Pacman game was developed in collaboration with BALOOMOODY DAREN,BEEHARRY VIBAHAKARSINGH  and YOGHESWAR SURJOO.
+Prerequisites
 
- https :://gluonhq.com/products/javafx/ 
+Before running the game, ensure you have the following prerequisites:
 
-Set up.
-The steps found below will helps to configure a project properly before starting the coding part.
+    Eclipse workspace
+    JavaFX SDK, which can be downloaded from the GluonHQ website
 
-    we first create a java project with the name Pacman
-    Once the project is created we need to configure the build path, To do so follow the steps below.
+Setup
 
-Steps
+Follow these steps to configure the project before starting:
 
- Right click on the project which has been created.
- Click on build path -> Configure build path -> Libraries -> Module path -> Add External JARS
- 
- Once add External JARS is been click, a JARS selection page will pop up
- Select all the librabies found in the Folder lib.
-   openjfx-21.0.2_windows-x64_bin-sdk -> javafx-sdk-21.0.2 -> lib
-   
-Once all libraries is been selected, click on apply and close, A new file name 
-`Reference libraries` will be created in the project file which will contained all the
-libraries which have been selected.
+    Create a Java project named "Pacman."
+    Configure the build path by:
+        Right-clicking on the project.
+        Selecting Build Path -> Configure Build Path.
+        Under Libraries -> Module Path, click Add External JARS.
+    Select all the libraries from the following path:
+    openjfx-21.0.2_windows-x64_bin-sdk -> javafx-sdk-21.0.2 -> lib.
+    Click Apply and Close.
 
-After the above steps has been successfully been done we may proceed with the remaining procedures.
-Creation of a new package.
+After completing the above steps, proceed with the following:
+Creation of Packages
 
-   Create a new package as desire:
-   In this case pacman.
-   
-Upon successful creation it will appear in the SRC folder
+Create a new package named "pacman" within the src folder.
+Creation of Classes
 
-Creation of a new class.
+Create the following two classes:
 
-   Create 2 new class as follows:
-       1. Pacman.java
-       2. Model.java
-Make sure that public static void main(string[]arg) is been selected during the creation.
+    Pacman.java
+    Model.java
 
-Once the class is been created we will need to run the configurations.
+Ensure to select public static void main(String[] args) during class creation.
+Run Configurations
 
-click on run -> run configurations
-The name project and main class should be selected in the main section.
+    Click Run -> Run Configurations.
 
-And then we need to set the vm arguments which is found in the argument section.
---module-path "THE PATH OF THE LIB FOLDER WHICH IS FOUND IN THE JAVAFX_SDK WHICH HAS 
-BEEN DOWNLOADED" --add-modules javafx.controls,javafx.fxml
+    Ensure the project name and main class are selected in the main section.
 
-EXAMPLE:
---module-path "C:\Users\toto\Downloads\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2
-\lib" --add-modules javafx.controls,javafx.fxml
+    Set the VM arguments under the argument section:
 
-Once done apply and run.
+    arduino
 
-Problem that might arise during the execution of the above steps.
+--module-path "PATH_TO_LIB_FOLDER_IN_JAVAFX_SDK" --add-modules javafx.controls,javafx.fxml
 
-   During the run configurations, User might found that their app is not visible in the 
-   section java application found in the toolbar. However in this case user will to create it 
-   manually, do so to user just need to select their desire project and main class. In the 
-   section name a desire name and this name will appear in the section run to run the game.
+Example:
 
-Creation of the game.
+arduino
 
-   Copy and paste the code found in the Sourcecode file and paste it in 
-   the Pacman.java and Model.java file
+    --module-path "C:\Users\toto\Downloads\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2\lib" --add-modules javafx.controls,javafx.fxml
 
-   Once copy save and run the project.
+    Click Apply and Run.
 
-How to play the game.
+Possible Issues
 
-   To move the Pacman simply use the direction key. Each time a food is been eat the amount 
-   of points will increased. If the ghost touches the pacman or vice versa the game is over.
+If the app is not visible in the Java Application section during run configurations, manually create it by selecting the project and main class. Provide a desired name, which will appear in the run section to execute the game.
+Playing the Game
 
-New Game Version---Pacman V2.
+    Use the directional keys to move Pacman.
+    Each time Pacman eats food, the points increase.
+    If Pacman collides with a ghost or vice versa, the game ends.
 
-   The concept of pacman V2 is the same as Pacman, Thus the only change is that Pacman V2
-   has 5 different level. However to change level the user must complete the intial level
-   first repecting the number of heart.
+New Game Version - Pacman V2
+
+Pacman V2 retains the same concept as Pacman but introduces 5 different levels. To advance to a new level, the user must complete the initial level while respecting the number of hearts.
