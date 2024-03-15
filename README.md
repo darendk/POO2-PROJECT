@@ -11,65 +11,59 @@ Pacman Game in JavaFX
 This Pacman game was developed in collaboration with BALOOMOODY DAREN,BEEHARRY VIBAHAKARSINGH  and YOGHESWAR SURJOO.
 Prerequisites
 
-Before running the game, ensure you have the following prerequisites:
+# Prerequisites
 
-    Eclipse workspace
-    JavaFX SDK, which can be downloaded from the GluonHQ website
+Before starting, ensure you have the following prerequisites:
 
-Setup
+- Eclipse workspace
+- JavaFX SDK, which can be downloaded from the website GluonHQ or from the following link:
+  [JavaFX SDK](https://gluonhq.com/products/javafx/)
 
-Follow these steps to configure the project before starting:
+# Set up
 
-    Create a Java project named "Pacman."
-    Configure the build path by:
-        Right-clicking on the project.
-        Selecting Build Path -> Configure Build Path.
-        Under Libraries -> Module Path, click Add External JARS.
-    Select all the libraries from the following path:
-    openjfx-21.0.2_windows-x64_bin-sdk -> javafx-sdk-21.0.2 -> lib.
-    Click Apply and Close.
+Follow these steps to configure the project properly before starting the coding part:
 
-After completing the above steps, proceed with the following:
-Creation of Packages
+1. Create a Java project named Pacman.
+2. Configure the build path:
+    - Right-click on the project.
+    - Click on `Build Path` -> `Configure Build Path` -> `Libraries` -> `Module Path` -> `Add External JARS`.
+    - Select all the libraries found in the Folder lib:
+      `openjfx-21.0.2_windows-x64_bin-sdk -> javafx-sdk-21.0.2 -> lib`.
+    - Click `Apply and Close`. This will create a new file named `Reference libraries` in the project containing all the selected libraries.
 
-Create a new package named "pacman" within the src folder.
-Creation of Classes
+# Creation of a new package
 
-Create the following two classes:
+Create a new package as desired (e.g., `pacman`). Upon successful creation, it will appear in the `SRC` folder.
 
-    Pacman.java
-    Model.java
+# Creation of a new class
 
-Ensure to select public static void main(String[] args) during class creation.
-Run Configurations
+Create 2 new classes as follows:
+1. Pacman.java
+2. Model.java
+Ensure that `public static void main(String[] args)` is selected during creation.
 
-    Click Run -> Run Configurations.
+# Run Configurations
 
-    Ensure the project name and main class are selected in the main section.
+1. Click on `Run` -> `Run Configurations`.
+2. Ensure the project name and main class are selected in the main section.
+3. Set the VM arguments found in the argument section:
+   `--module-path "THE PATH OF THE LIB FOLDER WHICH IS FOUND IN THE JAVAFX_SDK WHICH HAS BEEN DOWNLOADED" --add-modules javafx.controls,javafx.fxml`
+   Example:
+   `--module-path "C:\Users\toto\Downloads\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2\lib" --add-modules javafx.controls,javafx.fxml`
+4. Click `Apply` and then `Run`.
 
-    Set the VM arguments under the argument section:
+# Potential Problems
 
-    arduino
+If the app is not visible in the `Java Application` section during run configurations, create it manually by selecting the desired project and main class. Then, name it accordingly.
 
---module-path "PATH_TO_LIB_FOLDER_IN_JAVAFX_SDK" --add-modules javafx.controls,javafx.fxml
+# Creation of the Game
 
-Example:
+Copy and paste the code found in the Sourcecode file and paste it in the `Pacman.java` and `Model.java` files. Once done, save and run the project.
 
-arduino
+# How to Play the Game
 
-    --module-path "C:\Users\toto\Downloads\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2\lib" --add-modules javafx.controls,javafx.fxml
+To move the Pacman, simply use the directional keys. Each time a food is eaten, the points increase. If the ghost touches the Pacman or vice versa, the game is over.
 
-    Click Apply and Run.
+# New Game Version - Pacman V2
 
-Possible Issues
-
-If the app is not visible in the Java Application section during run configurations, manually create it by selecting the project and main class. Provide a desired name, which will appear in the run section to execute the game.
-Playing the Game
-
-    Use the directional keys to move Pacman.
-    Each time Pacman eats food, the points increase.
-    If Pacman collides with a ghost or vice versa, the game ends.
-
-New Game Version - Pacman V2
-
-Pacman V2 retains the same concept as Pacman but introduces 5 different levels. To advance to a new level, the user must complete the initial level while respecting the number of hearts.
+Pacman V2 has the same concept as Pacman but with 5 different levels. To advance to the next level, the user must complete the initial level while respecting the number of lives.
